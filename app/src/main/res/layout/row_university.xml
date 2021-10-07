@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginVertical="@dimen/v_size"
+    android:layout_marginHorizontal="@dimen/x_size"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:paddingTop="@dimen/v_size"
+    app:cardCornerRadius="@dimen/v_size"
+    app:cardElevation="@dimen/v_size">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxxxx_size">
+
+
+
+        <ImageView
+            android:id="@+id/img_icon_university_dialog_row"
+            android:layout_width="@dimen/xxxxx_size"
+            android:layout_height="@dimen/xxxxx_size"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:paddingRight="2dp"
+            android:scaleType="fitCenter"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_icon_university_dialog_row"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_icon_university_dialog_row">
+                <ir.selfino.android.View.CTextView
+                    android:id="@+id/txt_name_store_dialog_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/txt_rank_club_row"
+                    android:layout_alignParentRight="true"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/fxi_size"
+                    tools:text="سیستان و بلوچستان"
+                    android:layout_toLeftOf="@+id/txt_rank_club_row"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

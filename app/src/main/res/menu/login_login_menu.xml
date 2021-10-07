@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/account_login_login_menu"
+        android:title="">
+        <menu>
+            <group>
+                <item android:id="@+id/phone_number_login_login_menu"
+                      android:title=""
+                      android:icon="@drawable/ic_save_128"/>
+                <item android:id="@+id/full_name_login_login_menu"
+                      android:title=""
+                      android:icon="@drawable/ic_save_128"/>
+
+                <item android:id="@+id/username_login_login_menu"
+                      android:title=""
+                      android:icon="@drawable/ic_save_128"/>
+
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/credit_login_login_menu"
+          android:title="اعتبار سلف سرویس">
+        <menu>
+            <group>
+                <item android:id="@+id/credit_balance_login_login_menu"
+                      android:title=""
+                      android:icon="@drawable/ic_save_128"
+                      android:enabled="false"/>
+                <item android:id="@+id/increase_credit_login_login_menu"
+                      android:title="افزایش موجودی"
+                      android:icon="@drawable/ic_save_128"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/week_login_login_menu"
+          android:title="هفته ها">
+        <menu>
+            <group>
+                <item android:id="@+id/pre_week_login_login_menu"
+                      android:title="قبل"
+                      android:icon="@drawable/ic_save_128"/>
+
+                <item android:id="@+id/stream_week_login_login_menu"
+                      android:title="جاری"
+                      android:icon="@drawable/ic_save_128"/>
+
+                <item android:id="@+id/next_week_login_login_menu"
+                      android:title="بعد"
+                      android:icon="@drawable/ic_save_128"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/again_enter_login_login_menu"
+          android:title="ورود مجدد"
+          android:icon="@drawable/ic_save_128" />
+
+    <item android:id="@+id/connect_login_login_menu"
+          android:title="ارتباط با ما"
+          android:icon="@drawable/ic_save_128" />
+
+    <item android:id="@+id/about_us_login_login_menu"
+        android:title="درباره ما"
+        android:icon="@drawable/ic_save_128"/>
+
+    <item android:id="@+id/guide_login_login_menu"
+        android:title="راهنما"
+        android:icon="@drawable/ic_save_128"/>
+
+    <item android:id="@+id/exit_login_login_menu"
+        android:title="خروج"
+        android:icon="@drawable/ic_save_128"/>
+</menu>

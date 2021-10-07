@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_background_uni"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+        <!--android:src="@drawable/iv_first_login_back_ground"/>-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/img_logo_uni" />
+            <ir.selfino.android.View.CButton
+                android:id="@+id/btn_state_university"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="استان..."
+                android:gravity="right|center"
+                android:textColor="@color/text_hint"
+                android:paddingRight="@dimen/x_size"
+                android:background="@drawable/selector_btn_down"
+                android:layout_marginTop="20dp"/>
+            <ir.selfino.android.View.CButton
+                android:id="@+id/btn_select_university"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="right|center"
+                android:text="دانشگاه..."
+                android:paddingRight="@dimen/x_size"
+                android:textColor="@color/text_hint"
+                android:background="@drawable/selector_btn_down"
+                android:layout_marginTop="20dp"/>
+
+            <ir.selfino.android.View.CButton
+                android:id="@+id/btn_sin_log_university"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="@dimen/xv_size"
+                android:text="ورود یا ثبت نام"
+                android:background="@drawable/selector_btn_pink"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="20dp"/>
+
+            <ir.selfino.android.View.CTextView
+                android:id="@+id/txt_selfino_uni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_marginTop="40dp"
+                android:text="دیگه هیچوقت رزرو غذا یادت نمیره" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/img_self_login_university"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/txt_self_login_university"
+        android:layout_alignBottom="@+id/txt_self_login_university"
+        android:src="@drawable/ic_arrow_forward"/>
+
+    <ir.selfino.android.View.CButton
+        android:id="@+id/txt_self_login_university"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_toLeftOf="@id/img_self_login_university"
+        android:text="ورود بدون ثبت نام"
+        android:gravity="center"
+        android:background="@null"/>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/login_main_menu"
+        android:icon="@drawable/ic_save_128"
+        android:title="ورود یا عضویت"/>
+    <item
+        android:id="@+id/phone_number_main_menu"
+        android:icon="@drawable/ic_save_128"
+        android:title=""/>
+    <item
+        android:id="@+id/account_main_menu"
+        android:title="">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/full_name_main_menu"
+                    android:icon="@drawable/ic_save_128"
+                    android:title=""/>
+                <item
+                    android:id="@+id/username_main_menu"
+                    android:icon="@drawable/ic_save_128"
+                    android:title=""/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/credit_main_menu"
+        android:title="اعتبار سلف سرویس">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/credit_balance_main_menu"
+                    android:enabled="false"
+                    android:icon="@drawable/ic_save_128"
+                    android:title=""/>
+                <item
+                    android:id="@+id/increase_credit_main_menu"
+                    android:icon="@drawable/ic_save_128"
+                    android:title="افزایش اعتبار"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/week_main_menu"
+        android:title="هفته ها">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/pre_week_main_menu"
+                    android:icon="@drawable/ic_save_128"
+                    android:title="قبل"/>
+
+                <item
+                    android:id="@+id/stream_week_main_menu"
+                    android:icon="@drawable/ic_save_128"
+                    android:title="جاری"/>
+
+                <item
+                    android:id="@+id/next_week_main_menu"
+                    android:icon="@drawable/ic_save_128"
+                    android:title="بعد"/>
+            </group>
+        </menu>
+    </item>
+<item android:title="">
+    <menu>
+    <item
+        android:id="@+id/again_enter_main_menu"
+        android:icon="@drawable/ic_save_128"
+        android:title="ورود مجدد"/>
+
+    <item
+        android:id="@+id/connect_main_menu"
+        android:icon="@drawable/ic_save_128"
+        android:title="ارتباط با ما"/>
+
+    <item
+        android:id="@+id/about_us_main_menu"
+        android:icon="@drawable/ic_save_128"
+        android:title="درباره ما"/>
+
+    <item
+        android:id="@+id/guide_main_menu"
+        android:icon="@drawable/ic_save_128"
+        android:title="راهنما"/>
+
+    <item
+        android:id="@+id/exit_main_menu"
+        android:icon="@drawable/ic_save_128"
+        android:title="خروج"/>
+    </menu>
+</item>
+</menu>

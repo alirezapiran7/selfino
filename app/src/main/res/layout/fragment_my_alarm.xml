@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x_margin"
+                android:layout_marginRight="@dimen/x_margin"
+                android:layout_marginTop="@dimen/v_margin"
+                android:layoutDirection="rtl"
+                app:cardCornerRadius="@dimen/x_size"
+                app:cardElevation="@dimen/v_size"
+                app:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/selector_top_meal_cardview"
+                        android:paddingVertical="@dimen/i_size">
+
+
+                        <ir.selfino.android.View.CTextView
+                            android:id="@+id/txt_title_package_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/x_size"
+                            android:padding="@dimen/i_size"
+                            android:text="پکیج طلایی"
+                            android:textColor="@color/mdtp_white"
+                            android:textSize="@dimen/fxv_size"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <com.github.lzyzsd.circleprogress.DonutProgress
+                        android:id="@+id/pgb_deys_balance_alarm"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/v_size"
+                        android:elevation="@dimen/x_size"
+                        app:donut_finished_color="@color/colorPrimary"
+                        app:donut_progress="95"
+                        app:donut_text_color="@color/colorPrimary"
+                        app:donut_text_size="@dimen/fxx_size"
+                        app:donut_unfinished_color="@color/usePackage"
+                        app:donut_unfinished_stroke_width="11dp"/>
+
+                    <ir.selfino.android.View.CTextView
+                        android:id="@+id/txt_package_details_my_alarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/xxxx_size"
+                        android:layout_marginTop="@dimen/x_size"
+                        android:gravity="right"
+                        android:text="پکیج طلایی کامل‌ترین پکیح این مجموعه که تبلیغات از درون اپلیکیشن حذف شده و به کاربر در صورت عدم رزرو هشدار پیامکی رزرو می کند "
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/fxi_size"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_other_package_my_alarm"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/x_size"
+                        android:background="@drawable/selector_btn_down"
+                        android:orientation="horizontal">
+
+                        <ir.selfino.android.View.CButton
+                            android:id="@+id/btn_other_package_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:text="سایر پکیج ها"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="0dp"
+                            android:layout_alignBottom="@id/btn_other_package_my_alarm"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignTop="@id/btn_other_package_my_alarm"
+                            android:src="@drawable/ic_arrow_backward"
+                            android:tint="@color/colorPrimary"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x_margin"
+                android:layout_marginRight="@dimen/x_margin"
+                android:layout_marginVertical="@dimen/v_margin"
+                android:layoutDirection="rtl"
+                app:cardCornerRadius="@dimen/x_size"
+                app:cardElevation="@dimen/v_size"
+                app:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/selector_top_meal_cardview"
+                        android:paddingVertical="@dimen/i_size">
+
+                        <ir.selfino.android.View.CTextView
+                            android:id="@+id/txt_title_setting_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/x_size"
+                            android:padding="@dimen/i_size"
+                            android:text="تنظیمات"
+                            android:textColor="@color/mdtp_white"
+                            android:textSize="@dimen/fxv_size"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                    <ir.selfino.android.View.CTextView
+                        android:id="@+id/txt_des_setting_my_alarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/xxxx_size"
+                        android:layout_marginTop="@dimen/x_size"
+                        android:gravity="right"
+                        android:text="پکیج طلایی کامل‌ترین پکیح این مجموعه که تبلیغات از درون اپلیکیشن حذف شده و به کاربر در صورت عدم رزرو هشدار پیامکی رزرو می کند "
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/fxi_size"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/x_size"
+                        android:orientation="horizontal">
+
+                        <ir.selfino.android.View.CCheckBox
+                            android:id="@+id/ch_sat_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شنبه"/>
+
+                        <ir.selfino.android.View.CCheckBox
+                            android:id="@+id/ch_sun_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="یکشنبه"/>
+
+                        <ir.selfino.android.View.CCheckBox
+                            android:id="@+id/ch_mon_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="دوشنبه"/>
+
+                        <ir.selfino.android.View.CCheckBox
+                            android:id="@+id/ch_tue_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سه‌شنبه"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layoutDirection="rtl">
+
+                        <CheckBox
+                            android:id="@+id/che_wed_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="چهارشنبه"/>
+
+                        <CheckBox
+                            android:id="@+id/ch_thu_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="پنج‌شنبه"/>
+
+                        <CheckBox
+                            android:id="@+id/ch_fri_my_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="جمعه"/>
+                    </LinearLayout>
+
+                    <ir.selfino.android.View.CButton
+                        android:id="@+id/btn_save_setting_my_alarm"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/x_size"
+                        android:background="@drawable/selector_btn_down"
+                        android:text="ثبت"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

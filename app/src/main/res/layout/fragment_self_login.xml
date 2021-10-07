@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layoutDirection="rtl"
+             android:textDirection="rtl"
+             android:background="@color/text_white"
+             tools:context=".Fragment.SelfLoginFragment">
+
+    <ProgressBar
+        android:id="@+id/pbr_self_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_error_self_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/xxxxxx_size"
+            android:layout_height="@dimen/xxxxxx_size"
+            android:layout_above="@+id/txt_error_self_login"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_wifi_off"/>
+
+        <ir.selfino.android.View.CTextView
+            android:id="@+id/txt_error_self_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="لطفا اتصال اینترنت را بررسی کنید."
+            android:textSize="@dimen/fxv_size"/>
+
+        <ir.selfino.android.View.CButton
+            android:id="@+id/btn_error_self_login"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_error_self_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_btn_pink"
+            android:letterSpacing="0.025"
+            android:padding="10dp"
+            android:text="دوباره تلاش کن"
+            android:textAlignment="center"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/fxv_size"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_self_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x_size"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal">
+                <!--&gt;-->
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/v_size"
+                    android:src="@drawable/ic_student_hate_64"
+                    android:tint="@color/text_hint"/>
+
+                <ImageView
+                    android:id="@+id/img_stu_delete_code_self_login"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="@dimen/v_size"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/close_circular_button"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:theme="@style/TextLabel">
+                    <ir.selfino.android.View.CEditText
+                        android:id="@+id/et_stu_code_self_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:backgroundTint="@color/background_activity"
+                        android:gravity="right"
+                        android:hint="نام کاربری"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="@dimen/v_size"
+                        android:textColor="@color/text_black"
+                        android:textDirection="rtl"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/fxi_size"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="@dimen/xxxx_size"
+                android:background="@color/text_hint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/v_size"
+                    android:src="@drawable/ic_key_64"
+                    android:tint="@color/text_hint"
+                    tools:ignore="VectorDrawableCompat"/>
+                <ImageView
+                    android:id="@+id/img_pass_delete_code_self_login"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="@dimen/v_size"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/close_circular_button"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:theme="@style/TextLabel">
+
+                    <ir.selfino.android.View.CEditText
+                        android:id="@+id/et_stu_pass_self_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:backgroundTint="@color/background_activity"
+                        android:gravity="right"
+                        android:inputType="textPassword"
+                        android:hint="رمز عبور"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="@dimen/v_size"
+                        android:textColor="@color/text_black"
+                        android:textDirection="rtl"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/fxi_size"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="@dimen/xxxx_size"
+                android:background="@color/text_hint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <WebView
+                    android:id="@+id/web_captcha_self_login"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_captcha_self_login"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="@dimen/xxxx_size"
+                    android:scaleType="fitXY"
+                    android:background="@color/background_activity"
+                    android:visibility="visible"/>
+                <ImageView
+                    android:id="@+id/img_cap_delete_code_self_login"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/close_circular_button"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:theme="@style/TextLabel">
+                    <ir.selfino.android.View.CEditText
+                        android:id="@+id/et_captcha_self_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="متن تصویر"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="@dimen/v_size"
+                        android:textColor="@color/text_black"
+                        android:textDirection="rtl"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/fxi_size"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="@dimen/xxxxx_size"
+                android:background="@color/text_hint"/>
+            <ir.selfino.android.View.CButton
+                android:id="@+id/btn_done_self_login"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/xxxx_size"
+                android:background="@drawable/selector_btn_pink"
+                android:letterSpacing="0.025"
+                android:padding="10dp"
+                android:text="ورود "
+                android:textAlignment="center"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/fxv_size"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="vertical"
+              android:layoutDirection="rtl"
+              android:textDirection="rtl"
+              android:padding="@dimen/x_size">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ir.selfino.android.View.CEditText
+        android:id="@+id/txt_select_store_des_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/fxv_size"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/img_search_university_dialog"
+        android:paddingHorizontal="@dimen/x_size"
+        android:hint="جستجوی دانشگاه..."
+        android:layout_toRightOf="@+id/img_search_university_dialog"/>
+        <ImageButton
+            android:id="@+id/img_search_university_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/ic_arrow_backward"/>
+        </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_list_university_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x_size"
+        android:visibility="gone"/>
+    <com.crystal.crystalpreloaders.widgets.CrystalPreloader
+        android:id="@+id/pbr_university_dialog"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/xx_size"
+        android:layout_centerHorizontal="true"
+        app:crs_pl_fg_color="@color/colorPrimaryDark"
+        android:elevation="@dimen/v_size"/>
+</LinearLayout>

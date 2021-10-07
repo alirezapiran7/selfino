@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_marginRight="@dimen/v_size"
+    android:layout_marginVertical="@dimen/v_size"
+    app:cardCornerRadius="@dimen/i_size"
+    app:cardElevation="@dimen/v_size">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+        <ir.selfino.android.View.CTextView
+            android:id="@+id/txt_off_package_alarm_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_size"
+            android:background="@drawable/selector_btn_pink"
+            android:paddingHorizontal="@dimen/x_size"
+            android:textStyle="bold"
+            android:textSize="@dimen/fxi_size"
+            android:textColor="@color/text_white"
+            tools:text="20"/>
+    <ir.selfino.android.View.CCheckBox
+        android:id="@+id/cb_package_alarm_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fxi_size"
+        android:checked="true"
+        android:layoutDirection="rtl"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textStyle="bold"
+        tools:text="کشک زابل"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_hint"
+        android:layout_marginHorizontal="@dimen/xv_size"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/v_size">
+    <ir.selfino.android.View.CTextView
+        android:id="@+id/txt_price_package_alarm_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/fxi_size"
+        android:textStyle="bold"
+        android:textColor="@color/greenBlue"
+        android:layout_marginLeft="@dimen/xx_size"
+
+        tools:text="۱۵۰۰ تومان"/>
+    <ir.selfino.android.View.CTextView
+        android:id="@+id/txt_off_price_package_alarm_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/fxi_size"
+        android:textStyle="bold"
+        android:textColor="@color/greenBlue"
+        tools:text="۱۵۰۰ تومان"/>
+</LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>

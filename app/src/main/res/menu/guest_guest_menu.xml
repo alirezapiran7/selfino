@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/login_guest_guest_menu"
+          android:title="ورود یا عضویت"
+          android:icon="@drawable/ic_save_128" />
+
+    <item android:id="@+id/connect_guest_guest_menu"
+        android:title="ارتباط با ما"
+        android:icon="@drawable/ic_save_128" />
+
+    <item android:id="@+id/about_us_guest_guest_menu"
+        android:title="درباره ما"
+        android:icon="@drawable/ic_save_128"/>
+
+    <item android:id="@+id/guide_guest_guest_menu"
+        android:title="راهنما"
+        android:icon="@drawable/ic_save_128"/>
+
+    <item android:id="@+id/exit_guest_guest_menu"
+        android:title="خروج"
+        android:icon="@drawable/ic_save_128"/>
+</menu>

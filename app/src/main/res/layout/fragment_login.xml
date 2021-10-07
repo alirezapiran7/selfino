@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_back_sign_up_fragment"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:tint="@color/text_white"
+                android:src="@drawable/ic_arrow_backward"/>
+            <ir.selfino.android.View.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/fxvi_size"
+                android:text="ورود"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/layout_Root_font"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+                <ir.selfino.android.View.CTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/x_size"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/fxv_size"
+                    android:text="رمز عبور :"
+                    />
+
+                <ir.selfino.android.View.CEditText
+                    android:id="@+id/et_pass_login_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/v_size"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:background="@drawable/selector_btn_down"
+                    android:gravity="center"/>
+
+                <ir.selfino.android.View.CButton
+                    android:id="@+id/btn_done_login_fragment"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="@drawable/selector_btn_pink"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/text_white"
+                    android:text="ورود"
+                    android:textSize="@dimen/fxv_size"/>
+                <ir.selfino.android.View.CButton
+                    android:id="@+id/btn_forget_pass_login_fragment"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:layout_marginTop="@dimen/x_size"
+                    android:layout_gravity="center_horizontal"
+                    android:text="فراموشی رمز عبور"
+                    android:textSize="@dimen/fxv_size"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

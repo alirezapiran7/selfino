@@ -1,0 +1,34 @@
+package ir.selfino.android.View;
+
+import android.content.Context;
+import android.util.AttributeSet;
+
+import ir.selfino.android.Function.Controller;
+
+/**
+ * Created by Alireza on 3/25/2018.
+ */
+
+public class CCheckBox extends android.support.v7.widget.AppCompatCheckBox
+{
+    public CCheckBox(Context context)
+    {
+        super(context);
+        if(!isInEditMode())
+            setTypeface(Controller.MyTypeface);
+    }
+
+    public CCheckBox(Context context, AttributeSet attrs)
+    {
+        super(context, attrs);
+        if(!isInEditMode())
+            setTypeface(Controller.MyTypeface);
+    }
+
+    public CCheckBox(Context context, AttributeSet attrs, int defStyleAttr)
+    {
+        super(context, attrs, defStyleAttr);
+        if(!isInEditMode())
+            setTypeface(Controller.MyTypeface);
+    }
+}

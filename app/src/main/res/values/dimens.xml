@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_text_padding_right">8dp</dimen>
+    <dimen name="toolbar_text_size">15sp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_back_padding">16dp</dimen>
+    <dimen name="bottom_Rsv">76dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_0dp">0dp</dimen>
+    <dimen name="x_margin">10dp</dimen>
+    <dimen name="xx_margin">20dp</dimen>
+    <dimen name="xxx_margin">30dp</dimen>
+    <dimen name="i_margin">2dp</dimen>
+    <dimen name="v_margin">5dp</dimen>
+    <dimen name="xv_margin">15dp</dimen>
+    <dimen name="xxv_margin">25dp</dimen>
+    <dimen name="xxxv_margin">35dp</dimen>
+    <dimen name="i_size">2.5dp</dimen>
+    <dimen name="v_size">5dp</dimen>
+    <dimen name="vi_size">7.5dp</dimen>
+    <dimen name="x_size">10dp</dimen>
+    <dimen name="xi_size">12.5dp</dimen>
+    <dimen name="xv_size">15dp</dimen>
+    <dimen name="xvi_size">17.5dp</dimen>
+    <dimen name="xx_size">20dp</dimen>
+    <dimen name="xxi_size">22.5dp</dimen>
+    <dimen name="xxv_size">25dp</dimen>
+    <dimen name="xxvi_size">27.5dp</dimen>
+    <dimen name="xxx_size">30dp</dimen>
+    <dimen name="xxxi_size">32.5dp</dimen>
+    <dimen name="xxxv_size">35dp</dimen>
+    <dimen name="xxxvi_size">37.5dp</dimen>
+    <dimen name="xxxx_size">40dp</dimen>
+    <dimen name="xxxxi_size">42.5dp</dimen>
+    <dimen name="xxxxv_size">45dp</dimen>
+    <dimen name="xxxxvi_size">47.5dp</dimen>
+    <dimen name="xxxxx_size">50dp</dimen>
+    <dimen name="xxxxxx_size">60dp</dimen>
+    <dimen name="summer_food_size">180dp</dimen>
+    <dimen name="capcheh_size">50dp</dimen>
+
+
+
+    <dimen name="fx_size">10sp</dimen>
+    <dimen name="fxi_size">12.5sp</dimen>
+    <dimen name="fxv_size">15sp</dimen>
+    <dimen name="fxvi_size">17.5sp</dimen>
+    <dimen name="fxx_size">20sp</dimen>
+    <dimen name="fxxi_size">22.5sp</dimen>
+    <dimen name="fxxv_size">25sp</dimen>
+    <dimen name="fxxvi_size">27.5sp</dimen>
+    <dimen name="fxxx_size">30sp</dimen>
+    <dimen name="fxxxi_size">32.5sp</dimen>
+    <dimen name="fxxxv_size">35sp</dimen>
+    <dimen name="fxxxvi_size">37.5dp</dimen>
+    <dimen name="fxxxx_size">40sp</dimen>
+    <dimen name="fxxxxi_size">42.5sp</dimen>
+    <dimen name="fxxxxv_size">45sp</dimen>
+    <dimen name="fxxxxvi_size">47.5sp</dimen>
+    <dimen name="fxxxxx_size">50sp</dimen>
+</resources>

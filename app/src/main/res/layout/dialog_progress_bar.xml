@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.crystal.crystalpreloaders.widgets.CrystalPreloader
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/xx_size"
+        android:layout_centerHorizontal="true"
+        app:crs_pl_fg_color="@color/colorPrimaryDark"/>
+
+    <ir.selfino.android.View.CTextView
+        android:id="@+id/tv_message_progress_bar_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/fxv_size"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

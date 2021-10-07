@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rel_error_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="@dimen/xxxxxx_size"
+        android:layout_height="@dimen/xxxxxx_size"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/txt_des_erc_dialog"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wifi_off"/>
+    <ir.selfino.android.View.CTextView
+        android:id="@+id/txt_des_erc_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/fxv_size"
+        android:text="لطفا اتصال اینترنت را بررسی کنید."/>
+
+        <ir.selfino.android.View.CButton
+            android:id="@+id/btn_try_again_erc_dialog"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_des_erc_dialog"
+            android:layout_centerHorizontal="true"
+            android:letterSpacing="0.025"
+            android:padding="10dp"
+            android:text="دوباره تلاش کن"
+            android:textAlignment="center"
+            android:textSize="@dimen/fxv_size" />
+</RelativeLayout>
